@@ -7,12 +7,21 @@
     "test": "jest"
   },
   "dependencies": {
+    "prop-types": "^15.6.0",
     "react": "16.0.0",
-    "react-native": "0.51.0"
+    "react-native": "0.51.0",
+    "react-navigation": "^1.0.0-beta.22",
+    "react-promise": "^2.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
+    "babel-install": "2.1.0",
     "babel-jest": "22.0.3",
     "babel-preset-react-native": "4.0.0",
+    "eslint-plugin-babel": "^4.1.2",
     "jest": "22.0.3",
     "react-test-renderer": "16.0.0"
   },
