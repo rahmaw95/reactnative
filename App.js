@@ -7,17 +7,11 @@ import {
   TextInput,
   TouchableHighlight,
 } from 'react-native';
-import { StackNavigator } from 'react-navigation';
-import FirstPage from './Pages/FirstPage';
-import SecondPage from './Pages/SecondPage';
+import {createStore, combineReducers} from 'redux';
+import RahmaReducer from './rahma.reducer';
+import AtriaReducer from './atria.reducer';
 
-export default StackNavigator({
-  First : {
-    screen: FirstPage,
-    title : 'First Screen'
-  },
-  Second : {
-    screen: SecondPage,
-    title : 'First Screen'
-  }
-});
+export const init = () => createStore(combineReducers({
+  rahma: RahmaReducer,
+  atria: AtriaReducer,
+}));
